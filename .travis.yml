@@ -123,5 +123,4 @@ script:
   - ./configure --sysconfdir=/etc $CONFIGURE_FLAGS
   - make
   - test -f ./rhash || cat config.mak librhash/config.mak config.log
-  - make print-info test-lib
-  - make test
+  - make test-lib test print-info
